@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="Simi Fagbemi">
+</head>
+<body>
+	Create a new account
+	<br></br>
+	<form id="signIn" name="submitForm" method="GET" action="main.html">
+	<table class="form">
+		<tr>
+			<td>Account Name</td>
+			<td><input name="AccountName" required /></td>
+		</tr>
+
+		<tr>
+			<td>Display Name (Optional)</td>
+			<td><input name="DisplayName" /></td>
+		</tr>
+
+		<tr>
+			<td>E-mail Address</td>
+			<td><input name="Email" type="email" required /></td>
+		</tr>
+
+		<tr>
+			<td>Phone Number (format: 5555555555) </td>
+			<td><input name="PhoneNumber" required type="tel" pattern="\d{10}" /></td>
+		</tr>
+
+		<tr>
+			<td>Date of Birth (MM/DD/YYYY) </td>
+			<td><input name="DOB" required /></td>
+		</tr>
+
+		<tr>
+			<td>Zipcode (format: 55555) </td>
+			<td><input name="Zipcode" type="number" pattern="\d{5}" required /></td>
+		</tr>
+
+		<tr>
+			<td>Password</td>
+			<td><input name="Password" required type="password" /></td>
+		</tr>
+
+		<tr>
+			<td>Password Confirmation</td>
+			<td><input name="PasswordConfirmation" type="password" required /></td>
+		</tr>
+		
+	<tr><td colspan="2"><input type="submit" value="Submit form" /><br />
+	<input type="reset" value="Clear" /></td></tr>
+	</table>
+	<input type="hidden" name="timeStamp"/>
+	</form>
+	<br></br>
+	Already a user? Login
+	<br></br>
+	<table>
+				<tr>
+					<td>Account Name</td>
+					<td>  <input name="AccountName" required /> 
+						<span id="AccountNameText">  </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Password</td>
+					<td><input name="Password" required type="password" />
+						<span id="PasswordText">  </span>
+					</td>
+				</tr>
+				
+			<tr><td colspan="2"><input type="button" value="Login"/ id="update" onclick="login()"><br />
+			</td></tr>
+		</table>
+
+	
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+
+</html>
+
+
+
+
+

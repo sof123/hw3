@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<meta name="author" content="Simi Fagbemi">
+	<body>
+		<a href="main.html">Return to main page</a>
+		<table>
+				<tr>
+					<td>Current profile picture </td>
+					<td>
+						<img src="http://cliparts.co/cliparts/Mdi/9MK/Mdi9MKxc7.png" id="currentProfilePic" height="125" width="100">
+						Upload a new profile pic:
+						<input type="file" value="Upload new profile pic" />
+					</td>
+				</tr>
+				<tr>
+					<td>Display Name</td>
+					<td>  <input name="DisplayName" required /> 
+						<span id="DisplayNameText"> JJ </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>E-mail Address</td>
+					<td><input name="Email" type="email" /> 
+						<span id="EmailText"> abc123@gmail.com </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Phone Number (format: 5555555555) </td>
+					<td><input name="PhoneNumber" required type="tel" pattern="\d{10}" />
+						<span id="PhoneNumberText"> 5555555555 </span>
+					</td>
+				</tr>
+				<tr>
+					<td>Date of Birth </td>
+					<td>
+						<span id="DOBText"> 01/01/1995 </span>
+					</td>
+				</tr>
+				<tr>
+					<td>Zipcode (format: 55555) </td>
+					<td><input name="Zipcode" type="number" required />
+						<span id="ZipcodeText"> 55555 </span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Password </td>
+					<td><input name="Password" required type="password" />
+					<span id="PasswordText"> </span>
+					</td>
+				</tr>
+				
+				
+			<tr><td colspan="2"><input type="button" value="Update"/ id="update" onclick="updateVals()"><br />
+			</td></tr>
+		</table>
+
+	</body>
+</html>
+
+
+<SCRIPT SRC="profile.js">
+</SCRIPT>
